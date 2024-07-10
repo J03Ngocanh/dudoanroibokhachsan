@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
-
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -41,7 +39,7 @@ rfc = RandomForestClassifier(n_estimators=100, random_state=42)
 rfc.fit(X_train_scaled, y_train)
 
 # Streamlit App
-st.title("Dự đoán sự rời bỏ của khách hàng khách sạn")
+st.title("Dự đoán khả năng hủy đặt phòng của khách hàng")
 st.sidebar.title("Nhập các thuộc tính để dự đoán")
 
 required_car_parking_space = st.sidebar.selectbox('Khách hàng sử dụng bãi đỗ xe', ['Không', 'Có'])
