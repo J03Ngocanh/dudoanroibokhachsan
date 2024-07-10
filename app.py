@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+import pandas as pd
 
 # Load the trained KNN model
 model_path = 'dudoanhotel.pkl'
