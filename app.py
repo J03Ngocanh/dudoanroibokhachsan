@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 # Load the trained KNN model
-model_path = 'dudoanhotel1.pkl'
-rfc = pickle.load(open(model_path, 'rb'))
+model = 'dudoanhotel1.pkl'
+rfc = pickle.load(open(model, 'rb'))
 
 
 # Title of the application
