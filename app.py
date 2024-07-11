@@ -35,7 +35,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 # Huấn luyện mô hình RandomForestClassifier
-rfc = RandomForestClassifier(n_estimators=100, random_state=42)
+rfc = RandomForestClassifier(n_estimators=100, max_depth=20, random_state=42)
 rfc.fit(X_train_scaled, y_train)
 
 # Streamlit App
